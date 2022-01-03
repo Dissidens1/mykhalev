@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body {
+    font-family: 'Ubuntu';
+    background-color: #000;
+    position: relative;
+    box-sizing: border-box;
+}
+nav {
+    margin: 0 auto;
+}
+nav:before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #171313;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+}
+.fc {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.wd {
+    position: absolute;
+    left: 140px;
+    top: 5px;
+}
+
+.gr {
+    position: absolute;
+    left: 300px;
+    top: 5px;
+}
+.tr {
+    position: absolute;
+    left: 470px;
+    top: 5px;
+}
+.gt {
+    position: absolute;
+    left: 590px;
+    top: 5px;
+}
+.tp {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    box-shadow: 0 0 15px green;
+    background-color: green;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+
+}
+
+ul li a {
+    color: #fff;
+    display: block;
+    height:40px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+    z-index: 1000;
+    font-weight: 700;
+}
+
+.fc:hover {
+    box-shadow: 0 0 35px green;
+    background-color: green;
+    transition-delay: 0.05s;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+}
+.wd:hover {
+    box-shadow: 0 0 35px green;
+    background-color: green;
+    transition-delay: 0.05s;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+}
+.gr:hover {
+    box-shadow: 0 0 35px green;
+    background-color: green;
+    transition-delay: 0.05s;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+}
+.tr:hover {
+    box-shadow: 0 0 35px green;
+    background-color: green;
+    transition-delay: 0.05s;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+}
+.gt:hover {
+    box-shadow: 0 0 35px green;
+    background-color: green;
+    transition-delay: 0.05s;
+    border-color: green;
+    border-radius: 20px;
+    color: #000;
+}
+h1 {
+text-indent: 50px;	
+}
+.golova {
+    color: green;
+    text-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+    font-size: 60px;
+}
+.learn {
+    color: green;
+    text-shadow: 0 0 15px green;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 220px;
+}
+.gerb2 {
+    float: left;
+}
+.gerb {
+    float: left;
+    margin-top: 40px;
+    margin-left: 170px;
+    margin-right: 20px;
+}
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.card {
+    width: 320px;
+    height: 470px;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 10px;
+    margin-top: 450px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.front, .back {
+    border: 4px green solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+}
+.front {
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.back {
+    background-color: #000;
+    transform: rotateY(180deg);
+    color: #fff;
+}
+.backs {
+    font-size: 19px;
+    word-spacing: 3px;
+}
+.backa {
+    font-size: 28px;
+}
+
+
+.card:hover .front {transform: rotateY(180deg);}
+.card:hover .back {transform: rotateY(360deg);}
+
+.wrap2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.card2 {
+    width: 320px;
+    height: 470px;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 10px;
+    margin-top:450px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+.front2, .back2 {
+    border: 4px green solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+}
+.front2 {
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.back2 {
+    background-color: #000;
+    transform: rotateY(180deg);
+    color: #fff;
+}
+.backs2 {
+    font-size: 19px;
+    word-spacing: 3px;
+}
+.backa2 {
+    font-size: 28px;
+}
+
+
+.card2:hover .front2 {transform: rotateY(180deg);}
+.card2:hover .back2 {transform: rotateY(360deg);}
+
+.wrap3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.card3 {
+    width: 320px;
+    height: 470px;
+    position: relative;
+    perspective: 1000px;
+    border-radius: 10px;
+    margin-top: 450px;
+    margin-left: 940px;
+}
+
+.front3, .back3 {
+    border: 4px green solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+}
+.front3 {
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+}
+.back3 {
+    background-color: #000;
+    transform: rotateY(180deg);
+    color: #fff;
+}
+.backs3 {
+    font-size: 19px;
+    word-spacing: 3px;
+}
+.backa3 {
+    font-size: 28px;
+}
+
+
+.card3:hover .front3 {transform: rotateY(180deg);}
+.card3:hover .back3 {transform: rotateY(360deg);}
+
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(130deg, #2d2722 50%, green 50%);
+  -webkit-background-size: 300%;
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 35px;
+  border-radius: 5px;
+  transition: .5s;
+  z-index:9999;
+}
+.arrowUp:hover {
+  background-position: 100% 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.footer {
+    margin-top: 750px;
+    height: 100px;
+    background: #171313;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.footer div span {
+    color: green;
+    font-size: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer  p {
+    color: green;
+    text-align: center;
+}
+.riot {
+    height: 50px;
+    background: #171313;
+    margin-top: -70px;
+}
+.riot a {
+    text-decoration: none;
+    color: green;
+    cursor: pointer;
+}
